@@ -4,10 +4,10 @@ import { ChevronUp } from "@styled-icons/bootstrap";
 export const StyledInstructionsContainer = styled.div`
   position: fixed;
   left: 0.75rem;
-  bottom: ${({ instructionsVisible }) => (instructionsVisible ? 0 : "-10rem")};
+  bottom: ${({ instructionsVisible }) => (instructionsVisible ? 0 : "-15rem")};
 
-  height: 10rem;
-  width: 15rem;
+  height: 15rem;
+  width: 20rem;
 
   background-color: #00bfa5c1;
   color: #eee;
@@ -17,13 +17,31 @@ export const StyledInstructionsContainer = styled.div`
   z-index: 2;
 `;
 
+export const StyledMobileInstructionsWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+
+  display: block;
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+export const StyledDesktopInstructionsWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+`;
 export const StyledInstructionsTag = styled.div`
   position: absolute;
-  top: -2rem;
+  top: -4rem;
   left: 0;
 
-  height: 2rem;
-  width: 3rem;
+  height: 4rem;
+  width: 6rem;
 
   background-color: #00bfa5c1;
 
@@ -41,6 +59,8 @@ export const StyledInstruction = styled.div`
   align-items: center;
 
   margin-top: 0.25rem;
+
+  font-size: 1.5rem;
 `;
 
 export const StyledResetWrapper = styled.div`
@@ -48,8 +68,8 @@ export const StyledResetWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  height: 1.75rem;
-  width: 3.5rem;
+  height: 3rem;
+  width: 6rem;
 
   margin-top: 0.5rem;
 `;
@@ -61,6 +81,7 @@ export const StyledReset = styled.button`
   border: none;
   outline: none;
 
+  font-size: 1.5rem;
   background-color: #eee;
   color: #11171c;
 
@@ -96,5 +117,5 @@ export const StyledChevronWrapper = styled.div`
 `;
 
 export const StyledChevronUp = styled(ChevronUp)`
-  height: 1rem;
+  height: 2rem;
 `;

@@ -8,6 +8,8 @@ import {
   StyledInstructionsWrapper,
   StyledReset,
   StyledResetWrapper,
+  StyledDesktopInstructionsWrapper,
+  StyledMobileInstructionsWrapper,
 } from "./Instructions.styled";
 
 const Instructions = React.forwardRef((_, orbitRef) => {
@@ -30,15 +32,31 @@ const Instructions = React.forwardRef((_, orbitRef) => {
         </StyledChevronWrapper>
       </StyledInstructionsTag>
       <StyledInstructionsWrapper>
-        <StyledInstruction>
-          <strong>[Right-Click]:</strong>&nbsp;&nbsp;Pan
-        </StyledInstruction>
-        <StyledInstruction>
-          <strong>[Left-Click]:</strong>&nbsp;&nbsp;Rotate
-        </StyledInstruction>
-        <StyledInstruction>
-          <strong>[Scroll]:</strong>&nbsp;&nbsp;Zoom
-        </StyledInstruction>
+        {/* Desktop */}
+        <StyledDesktopInstructionsWrapper>
+          <StyledInstruction>
+            <strong>[Right-Click]:</strong>&nbsp;&nbsp;Pan
+          </StyledInstruction>
+          <StyledInstruction>
+            <strong>[Left-Click]:</strong>&nbsp;&nbsp;Rotate
+          </StyledInstruction>
+          <StyledInstruction>
+            <strong>[Scroll]:</strong>&nbsp;&nbsp;Zoom
+          </StyledInstruction>
+        </StyledDesktopInstructionsWrapper>
+
+        {/* Mobile */}
+        <StyledMobileInstructionsWrapper>
+          <StyledInstruction>
+            <strong>[Double-drag]:</strong>&nbsp;&nbsp;Pan
+          </StyledInstruction>
+          <StyledInstruction>
+            <strong>[Single-drag]:</strong>&nbsp;&nbsp;Rotate
+          </StyledInstruction>
+          <StyledInstruction>
+            <strong>[Pinch/Stretch]:</strong>&nbsp;&nbsp;Zoom
+          </StyledInstruction>
+        </StyledMobileInstructionsWrapper>
 
         <StyledInstruction>
           <strong>Enjoy! 🚀</strong>

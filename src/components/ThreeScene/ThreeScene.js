@@ -13,7 +13,7 @@ const ThreeScene = React.forwardRef((_, orbitRef) => {
   const canvasRef = useRef();
 
   return (
-    <StyledCanvas ref={canvasRef} camera={{ fov: 40, position: [1.3, 0.4, 0] }}>
+    <StyledCanvas ref={canvasRef} camera={{ fov: 40, position: [3, 2, 0] }}>
       <OrbitControls
         ref={orbitRef}
         enableZoom

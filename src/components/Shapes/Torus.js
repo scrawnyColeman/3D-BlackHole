@@ -18,7 +18,6 @@ const Torus = React.forwardRef(
         <torusGeometry args={geometryArgs} />
         <meshNormalMaterial
           wireframe
-          wireframeLinewidth={64}
           transparent={!!opacity}
           opacity={opacity}
         />

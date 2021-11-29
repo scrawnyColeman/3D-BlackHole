@@ -3,7 +3,7 @@ import { ChevronUp } from "@styled-icons/bootstrap";
 
 export const StyledInstructionsContainer = styled.div`
   position: fixed;
-  left: 10px;
+  left: 0.75rem;
   bottom: ${({ instructionsVisible }) => (instructionsVisible ? 0 : "-10rem")};
 
   height: 10rem;
@@ -23,11 +23,11 @@ export const StyledInstructionsTag = styled.div`
   left: 0;
 
   height: 2rem;
-  width: 40px;
+  width: 3rem;
 
   background-color: #00bfa5c1;
 
-  border-radius: 4px 4px 0 0;
+  border-radius: 0.25rem 0.25rem 0 0;
 
   cursor: pointer;
 `;
@@ -48,8 +48,8 @@ export const StyledResetWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  height: 28px;
-  width: 56px;
+  height: 1.75rem;
+  width: 3.5rem;
 
   margin-top: 0.5rem;
 `;
